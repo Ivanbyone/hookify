@@ -1,0 +1,6 @@
+[githooks]
+pre-commit = ""
+commit-msg = ""
+
+[logging]
+verbose = true
