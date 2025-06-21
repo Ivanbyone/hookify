@@ -1,0 +1,17 @@
+[package]
+name = "hookify"
+version = "0.1.0"
+authors = ["Ivan Boyko"]
+categories = [ "development-tools" ]
+license = "MIT"
+readme = "README.md"
+edition = "2024"
+exclude = [
+    ".github/**",
+    ".vscode/**",
+    "test/**",
+]
+
+[dependencies]
+clap = { version = "4.5.40", features = ["derive"] }
+toml = "0.8.23"
