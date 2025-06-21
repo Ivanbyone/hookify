@@ -2,7 +2,7 @@ use std::env;
 
 use clap::Parser;
 
-#[path ="config.rs"]
+#[path = "config.rs"]
 mod config;
 
 pub use config::Configuration;
@@ -32,7 +32,9 @@ pub fn version() -> Result<(), String> {
 
 pub fn initialize() -> Result<(), String> {
     let config: Configuration = Configuration::new();
-    config.initialize_default().map_err(|e| format!("Can't create configuration file: {}", e))?;
+    config
+        .initialize_default()
+        .map_err(|e| format!("Can't create configuration file: {}", e))?;
     Ok(())
 }
 
